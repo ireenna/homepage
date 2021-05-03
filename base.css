@@ -1,5 +1,6 @@
 ::-moz-selection {
   background: yellow;
+  
 }
 ::selection {
   background: yellow;
@@ -119,7 +120,7 @@ li {
   list-style: none outside none;
 }
 ul > li::before {
-  content: "●";
+  content: none;
   font-family: "Arial", sans-serif;
   float: left;
   width: 1.5em;
@@ -600,6 +601,9 @@ article {
 .contacts li a.facebook:hover {
   color: #3b5998;
 }
+.contacts li a.phone:hover {
+  color: #e03434;
+}
 .contacts li a.github:hover {
   color: dimgrey;
 }
@@ -615,9 +619,6 @@ article {
 .contacts li a.telegram:hover {
   color: #08c;
 }
-.contacts li a.phone:hover {
-  color: dimgrey;
-}
 .contacts li a.website {
   display: none;
 }
@@ -626,6 +627,8 @@ article {
   height: 1.1428rem;
   vertical-align: text-bottom;
 }
+
+
 
 @media only screen and (max-width: 767px) {
   .name,
@@ -768,7 +771,7 @@ li.bordered > ul > details > div {
 
 /* Timeline */
 .timeline {
-  list-style: none outside none;
+  /* list-style: none outside none; */
   padding: 0;
   margin: 0;
 }
@@ -785,12 +788,14 @@ li.bordered > ul > details > div {
   margin: 0;
 }
 
+
+
 /* Tags */
 .tags.small {
   font-size: 0.88em;
 }
 .tags.bulleted .tag:not(:last-child)::after {
-  content: "●";
+  content: none;
   display: inline-block;
   font-family: "Arial", sans-serif;
   font-size: 1rem;
@@ -1001,7 +1006,10 @@ header + main {
 main {
   overflow: auto;
   z-index: 2;
-  background: white;
+  display: block;
+  background-image: url(mars2.jpg);
+  background-size: cover;
+  background-position: top;
   position: relative;
 }
 main:nth-last-child(3) {
@@ -1027,6 +1035,7 @@ footer {
   header + main {
     margin-top: 0;
   }
+  
   main:nth-last-child(3) {
     margin-bottom: 0;
   }

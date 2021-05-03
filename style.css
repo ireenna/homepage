@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* 
 html, body {
     background-color: #222C32;
@@ -15,10 +16,10 @@ html, body {
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.intro {
+/* .intro {
     background: #F45B69;
-    padding: 100px 0;
-}
+    padding: 50px 0;
+} */
 
 .container {
     width: 90%;
@@ -37,7 +38,7 @@ html, body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-    padding: 50px 0;
+    padding: 30px 0;
     /* background: #252526; */
     border-radius: 2px;
 }
@@ -67,9 +68,9 @@ html, body {
         .timeline ul li div {
             position: relative;
             bottom: 0;
-            width: 400px;
+            width: 420px;
             padding: 15px;
-            background: #f1c25b;
+            background: #f5c484;
         }
 
             .timeline ul li div::before {
@@ -83,7 +84,7 @@ html, body {
 
         .timeline ul li:nth-child(odd) div {
             left: 45px;
-            background: #c49c6e;
+            background: #c0a07c;
         }
 
             .timeline ul li:nth-child(odd) div::before {
@@ -122,7 +123,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-    background: #eea810;
+    background: #ee8e10;
 }
 
 .timeline ul li div {
@@ -132,11 +133,11 @@ time {
 }
 
 .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
 .timeline ul li:nth-child(even) div {
-    transform: translate3d(200px, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
 .timeline ul li.in-view div {
@@ -149,24 +150,24 @@ time {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .timeline ul li div {
-        width: 250px;
+        width: calc(67vw - 91px);
     }
 
-    .timeline ul li:nth-child(even) div {
+    /* .timeline ul li:nth-child(even) div {
         left: 250px;*/
         /*250+45-6*/
-    /*}
-}*/
+    /*} */
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     /*.timeline ul li {
         margin-left: 20px;
     }*/
 
         .timeline ul li div {
-            width: calc(100vw - 91px);
+            width: calc(37vw - 91px);
         }
 
         /*.timeline ul li:nth-child(even) div {

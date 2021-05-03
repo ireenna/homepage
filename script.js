@@ -31,7 +31,7 @@
     function isElementNotInViewport(el) {
         var rect = el.getBoundingClientRect();
         return (
-            rect.top >= 450 
+            rect.top >= 450
         );
     }
 
