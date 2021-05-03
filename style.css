@@ -5,15 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* 
 html, body {
     background-color: #222C32;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
     padding-bottom: 50px;
-}
+} */
 /* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .intro {
     background: #F45B69;
@@ -28,17 +28,17 @@ html, body {
 
 }
 
-h1 {
+/* h1 {
     font-size: 2.5rem;
-}
+} */
 
 
 /* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .timeline ul {
     padding: 50px 0;
-    background: #252526;
+    /* background: #252526; */
     border-radius: 2px;
 }
 
@@ -47,9 +47,9 @@ h1 {
         position: relative;
         width: 6px;
         margin: 0 auto;
-        padding-top: 50px;
-        background: #fff;
-
+        padding-top: 20px;
+        background: rgb(0, 0, 0);
+        margin-left: 20px;
     }
 
         .timeline ul li::after {
@@ -69,7 +69,7 @@ h1 {
             bottom: 0;
             width: 400px;
             padding: 15px;
-            background: #ad9c9c;
+            background: #f1c25b;
         }
 
             .timeline ul li div::before {
@@ -83,41 +83,46 @@ h1 {
 
         .timeline ul li:nth-child(odd) div {
             left: 45px;
+            background: #c49c6e;
         }
 
             .timeline ul li:nth-child(odd) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent #F45B69 transparent transparent;
+                border-color: transparent #000000 transparent transparent;
             }
 
         .timeline ul li:nth-child(even) div {
-            left: -439px;
+            /*left: -439px;*/
+            left: 45px;
         }
 
             .timeline ul li:nth-child(even) div::before {
-                right: -15px;
+                /*right: -15px;
                 border-width: 8px 0 8px 16px;
-                border-color: transparent transparent transparent #F45B69;
+                border-color: transparent transparent transparent #F45B69;*/
+                left: -15px;
+                border-width: 8px 16px 8px 0;
+                border-color: transparent #000000 transparent transparent;
             }
 
 time {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
 }
 
 
 /* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
 .timeline ul li::after {
     transition: background .5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-    background: #F45B69;
+    background: #eea810;
 }
 
 .timeline ul li div {
@@ -131,7 +136,7 @@ time {
 }
 
 .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
+    transform: translate3d(200px, 0, 0);
 }
 
 .timeline ul li.in-view div {
@@ -142,29 +147,29 @@ time {
 
 
 /* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
     .timeline ul li div {
         width: 250px;
     }
 
     .timeline ul li:nth-child(even) div {
-        left: -289px;
+        left: 250px;*/
         /*250+45-6*/
-    }
-}
+    /*}
+}*/
 
 @media screen and (max-width: 600px) {
-    .timeline ul li {
+    /*.timeline ul li {
         margin-left: 20px;
-    }
+    }*/
 
         .timeline ul li div {
             width: calc(100vw - 91px);
         }
 
-        .timeline ul li:nth-child(even) div {
+        /*.timeline ul li:nth-child(even) div {
             left: 45px;
         }
 
@@ -172,5 +177,5 @@ time {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
                 border-color: transparent #F45B69 transparent transparent;
-            }
+            }*/
 }
