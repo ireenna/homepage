@@ -151,7 +151,7 @@ ol.inverted > li::before {
   font-weight: normal;
 }
 a {
-  color: blue;
+  color: rgb(165, 93, 0);
   background-color: transparent;
   text-decoration: none;
 }
@@ -608,7 +608,7 @@ article {
   color: dimgrey;
 }
 .contacts li a.mail:hover {
-  color: dimgrey;
+  color: rgb(255, 145, 0);;
 }
 .contacts li a.skype:hover {
   color: #00aff0;

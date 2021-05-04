@@ -41,3 +41,28 @@
     window.addEventListener("scroll", callbackFunc);
 
 })();
+
+
+function printText( el ){
+
+	let letterTimeout = 30
+    
+	let text = el.innerHTML
+	let i = 1
+
+	let print__fn = function(){
+
+			if( i <= text.length ){
+				el.innerHTML = text.substr( 0, i );
+				setTimeout( arguments.callee, letterTimeout );
+			}
+
+			i++;
+		}
+
+	print__fn() // init
+};
+
+// init
+let el = document.getElementById( 'typing' )
+printText( el );
