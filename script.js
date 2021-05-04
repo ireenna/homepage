@@ -43,26 +43,26 @@
 })();
 
 
-function printText( el ){
+// function printText( el ){
 
-	let letterTimeout = 30
+// 	let letterTimeout = 30
     
-	let text = el.innerHTML
-	let i = 1
+// 	let text = el.innerHTML
+// 	let i = 1
 
-	let print__fn = function(){
+// 	let print__fn = function(){
 
-			if( i <= text.length ){
-				el.innerHTML = text.substr( 0, i );
-				setTimeout( arguments.callee, letterTimeout );
-			}
+// 			if( i <= text.length ){
+// 				el.innerHTML = text.substr( 0, i );
+// 				setTimeout( arguments.callee, letterTimeout );
+// 			}
 
-			i++;
-		}
+// 			i++;
+// 		}
 
-	print__fn() // init
-};
+// 	print__fn() // init
+// };
 
-// init
-let el = document.getElementById( 'typing' )
-printText( el );
+// // init
+// let el = document.getElementById( 'typing' )
+// printText( el );

@@ -651,7 +651,7 @@ article {
 details {
   display: block;
 }
-details > summary::-webkit-details-marker {
+details > summary::marker {
   margin-left: 0.25em;
   margin-right: 0.25em;
 }
