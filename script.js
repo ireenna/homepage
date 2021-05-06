@@ -25,12 +25,14 @@
             if (isElementInViewport(items[i])) {
                 items[i].classList.add("in-view");
             }
+
             // if (isElementNotInViewport(items[i])) {
             //     items[i].classList.remove("in-view");
             // }
         }
     }
     
+
     // listen for events
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
