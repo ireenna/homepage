@@ -23,17 +23,9 @@
             if (isElementInViewport(items[i])) {
                 items[i].classList.add("in-view");
             }
-            if (isElementNotInViewport(items[i])) {
-                items[i].classList.remove("in-view");
-            }
         }
     }
-    function isElementNotInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 450
-        );
-    }
+    
 
     // listen for events
     window.addEventListener("load", callbackFunc);
