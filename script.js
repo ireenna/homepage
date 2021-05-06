@@ -9,6 +9,8 @@
     // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
+        // alert("top: "+rect.top+" left: "+ rect.left + " bottom: "+rect.bottom+" right: "+rect.right)
+        // alert("window.innerHeight" + window.innerHeight)
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -23,24 +25,20 @@
             if (isElementInViewport(items[i])) {
                 items[i].classList.add("in-view");
             }
-            if (isElementNotInViewport(items[i])) {
-                items[i].classList.remove("in-view");
-            }
+            // if (isElementNotInViewport(items[i])) {
+            //     items[i].classList.remove("in-view");
+            // }
         }
     }
-    function isElementNotInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 450
-        );
-    }
-
+    
     // listen for events
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 
 })();
+
+
 
 
 // function printText( el ){
